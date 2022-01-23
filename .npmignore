@@ -2,3 +2,7 @@ node_modules
 /src
 /tests
 /scripts
+/.eslintrc.json
+/bin
+/.vscode
+/.nyc_output
