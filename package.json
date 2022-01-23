@@ -1,6 +1,6 @@
 {
   "name": "@lunarade/tsseed",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Basic typescript project seed generator.",
   "main": "./dist/src/main.js",
   "bin": {
@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "del-cli": "^4.0.1",
+    "dotenv": "^14.2.0",
     "mkdirp": "^1.0.4",
     "recursive-copy": "^2.0.13"
   },

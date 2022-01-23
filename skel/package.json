@@ -17,6 +17,9 @@
   },
   "author": "",
   "license": "GPL-2.0-only",
+  "dependencies": {
+    "dotenv": "^14.2.0"
+  },
   "devDependencies": {
     "@angular-eslint/eslint-plugin": "^13.0.1",
     "@types/mocha": "^9.1.0",
