@@ -2,11 +2,18 @@ import { execSync } from 'child_process';
 import { readFileSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
 import copy from 'recursive-copy';
+import { name, version } from '../package.json';
 
 export default async function tsseed() {
     console.time('Done');
 
     const [nodeBinary, binFilename, projectName, ...flagsArray] = process.argv;
+    const versionFlags = new Set(['-v', '--version']);
+
+    if (versionFlags.has(projectName)) {
+        return console.log(`${name} v${version}`);
+    }
+
     const flags = new Set(flagsArray);
 
     const projectDir = resolve(process.cwd(), projectName);

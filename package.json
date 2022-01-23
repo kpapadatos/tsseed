@@ -1,6 +1,6 @@
 {
   "name": "@lunarade/tsseed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic typescript project seed generator.",
   "main": "./dist/src/main.js",
   "bin": {
