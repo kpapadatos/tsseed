@@ -23,6 +23,7 @@ export default async function tsseed() {
 
     setPackageName(projectDir, projectName);
 
+    execSync('git init', { cwd: projectDir });
     execSync('npm i', { cwd: projectDir });
 
     if (flags.has('-o')) {
