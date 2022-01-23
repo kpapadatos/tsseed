@@ -4,6 +4,9 @@
   "typescript.referencesCodeLens.enabled": true,
   "prettier.singleQuote": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "terminal.integrated.defaultProfile.windows": "JavaScript Debug Terminal",
+  "terminal.integrated.defaultProfile.linux": "JavaScript Debug Terminal",
+  "terminal.integrated.defaultProfile.osx": "JavaScript Debug Terminal",
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features",
     "editor.codeActionsOnSave": {

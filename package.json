@@ -1,6 +1,6 @@
 {
   "name": "@lunarade/tsseed",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Basic typescript project seed generator.",
   "main": "./dist/src/main.js",
   "bin": {
@@ -12,7 +12,7 @@
     "tsc-w": "tsc -w --pretty",
     "clean": "mkdirp dist && del-cli -f dist && mkdirp dist",
     "test": "tsc && mocha -r source-map-support/register --timeout 50000 dist/tests/**/*.test.js",
-    "test-w": "tsc && mocha -r source-map-support/register --timeout 50000 dist/tests/**/*.test.js",
+    "test-w": "ts-node scripts/test-w.ts",
     "mocha-watch-js": "mocha -r source-map-support/register --timeout 50000 --watch --watch-files dist dist/tests/**/*.test.js"
   },
   "author": {
