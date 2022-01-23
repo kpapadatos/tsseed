@@ -42,5 +42,7 @@ function setPackageName(projectDir: string, projectName: string) {
 function tryOpenWithVscode(projectDir: string) {
     try {
         execSync(`code ${projectDir}`);
-    } catch { }
+    } catch (e: any) {
+        console.log(e?.message);
+    }
 }
