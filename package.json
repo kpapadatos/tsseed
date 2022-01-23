@@ -1,0 +1,41 @@
+{
+  "name": "@lunarade/tsseed",
+  "version": "1.0.0",
+  "description": "Basic typescript project seed generator.",
+  "main": "./dist/src/main.js",
+  "bin": {
+    "tsseed": "./bin/tsseed.js"
+  },
+  "scripts": {
+    "dev": "npm link && ts-node scripts/dev.ts",
+    "nodemon": "nodemon -w dist --delay 500ms --ext js --exec  \"node -r source-map-support/register dist/src/main.js\"",
+    "tsc-w": "tsc -w --pretty",
+    "clean": "mkdirp dist && del-cli -f dist && mkdirp dist",
+    "test": "tsc && mocha -r source-map-support/register --timeout 50000 dist/tests/**/*.test.js",
+    "test-w": "tsc && mocha -r source-map-support/register --timeout 50000 dist/tests/**/*.test.js",
+    "mocha-watch-js": "mocha -r source-map-support/register --timeout 50000 --watch --watch-files dist dist/tests/**/*.test.js"
+  },
+  "author": {
+    "email": "k.papadatos@pobuca.com",
+    "name": "Kosmas Papadatos",
+    "url": "https://github.com/kpapadatos"
+  },
+  "license": "GPL-2.0-only",
+  "devDependencies": {
+    "@angular-eslint/eslint-plugin": "^13.0.1",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "^17.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "del-cli": "^4.0.1",
+    "eslint": "^8.7.0",
+    "mkdirp": "^1.0.4",
+    "mocha": "^9.1.4",
+    "nodemon": "^2.0.15",
+    "nyc": "^15.1.0",
+    "recursive-copy": "^2.0.13",
+    "source-map-support": "^0.5.21",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
